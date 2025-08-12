@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/ckUSDC_backend"
+]
+resolver = "2"

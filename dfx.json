@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "ckUSDC_backend": {
+      "candid": "src/ckUSDC_backend/ckUSDC_backend.did",
+      "package": "ckUSDC_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
