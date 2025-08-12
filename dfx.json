@@ -4,6 +4,12 @@
       "candid": "src/ckUSDC_backend/ckUSDC_backend.did",
       "package": "ckUSDC_backend",
       "type": "rust"
+    },
+    "icrc1_ledger_canister": {
+      "type": "custom",
+      "candid": "icrc1_ledger.did",
+      "wasm": "icrc1_ledger.wasm.gz",
+      "init_arg": "(variant { Init = record { token_symbol = \"ckUSDC\"; token_name = \"ckUSDC\"; minting_account = record { owner = principal \"hpikg-6exdt-jn33w-ndty3-fc7jc-tl2lr-buih3-cs3y7-tftkp-sfp62-gqe\"; }; transfer_fee = 1; metadata = vec {}; feature_flags = opt record { icrc2 = true }; initial_balances = vec { record { record { owner = principal \"hpikg-6exdt-jn33w-ndty3-fc7jc-tl2lr-buih3-cs3y7-tftkp-sfp62-gqe\"; }; 1000000 } }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 500; controller_id = principal \"hpikg-6exdt-jn33w-ndty3-fc7jc-tl2lr-buih3-cs3y7-tftkp-sfp62-gqe\"; cycles_for_archive_creation = opt 10000000000000; } } })"
     }
   },
   "defaults": {
